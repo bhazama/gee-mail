@@ -3,16 +3,82 @@
 		<script src="js/mail-generator.js"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
     <script>
-      window.onload = function(){
+  window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        
-      };
+  console.log(window.geemails);
+
+  for(var i = 0; i<window.geemails.length;i++){
+
+
+    var subjectElem = document.createElement("div");
+    subjectElem.class = "subject";
+    subjectElem.innerHTML = "SUBJECT: " + window.geemails[i].subject;
+    main.appendChild(subjectElem);
+
+    var dateElem = document.createElement("div");
+    dateElem.class = "date";
+    dateElem.innerHTML = "DATE: " + window.geemails[i].date;
+    main.appendChild(dateElem);
+
+    var senderElem = document.createElement("div");
+    senderElem.class = "sender";
+    senderElem.innerHTML = "SENDER: " + window.geemails[i].sender;
+    main.appendChild(senderElem);
+
+    var bodyElem = document.createElement("div");
+    bodyElem.class = "body";
+    bodyElem.innerHTML = "BODY: " + window.geemails[i].body;
+    senderElem.appendChild(bodyElem);
+
+    var toggleElem = document.getElementsByClassName("sender");
+    for(var i = 0; i<toggleElem.length;i++){
+    console.log(toggleElem[i]);
+    toggleElem[i].addEventListener("click", toggleShow);
+    }
+
+    function toggleShow(){
+      var newBody = this.querySelectorAll(".body")[0];
+      if(bodyElem.style.display === "none"){
+        bodyElem.style.display = "block";
+      }else{
+        bodyElem.style.display = "none";
+      }
+    }
+
+  var count = 0;
+  for(var i = 0; i<window.geemails.length; i++){
+    count += windows.geemails.length;
+    return count;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+  }
+};
     </script>
 	</head>
 	<body>
 		<div class="container" id="main">
-			Build Me!
+      
+        
+		
 		</div>
 	</body>
 </html>
