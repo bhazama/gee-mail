@@ -6,72 +6,122 @@
   window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-  console.log(window.geemails);
+  //console.log(window.geemails);
+  
+  var titleLine = document.createElement("h2");
+  titleLine.id = "titleLine";
+  titleLine.innerHTML = "Gee-Mail Challenge";
+  main.appendChild(titleLine);
+  
 
+  var count = 0;
   for(var i = 0; i<window.geemails.length;i++){
+    count+=1;
 
+    var inboxCount = document.createElement("div");
+    inboxCount.className = "inbox";
+    inboxCount.innerHTML = "INBOX COUNT: " + count;
+    main.appendChild(inboxCount);
 
     var subjectElem = document.createElement("div");
-    subjectElem.class = "subject";
+    subjectElem.className = "subject";
     subjectElem.innerHTML = "SUBJECT: " + window.geemails[i].subject;
     main.appendChild(subjectElem);
 
     var dateElem = document.createElement("div");
-    dateElem.class = "date";
+    dateElem.className = "date";
     dateElem.innerHTML = "DATE: " + window.geemails[i].date;
     main.appendChild(dateElem);
 
     var senderElem = document.createElement("div");
-    senderElem.class = "sender";
+    senderElem.className = "sender";
     senderElem.innerHTML = "SENDER: " + window.geemails[i].sender;
     main.appendChild(senderElem);
 
     var bodyElem = document.createElement("div");
-    bodyElem.class = "body";
+    bodyElem.className = "body";
     bodyElem.innerHTML = "BODY: " + window.geemails[i].body;
     senderElem.appendChild(bodyElem);
 
-    var toggleElem = document.getElementsByClassName("sender");
-    for(var i = 0; i<toggleElem.length;i++){
-    console.log(toggleElem[i]);
-    toggleElem[i].addEventListener("click", toggleShow);
+  }
+  
+
+    
+    toggleElem = document.getElementsByClassName("sender");
+    for(var j = 0; j<toggleElem.length; j++){
+    toggleElem[j].addEventListener("click", toggleShow);
     }
+    
 
     function toggleShow(){
-      var newBody = this.querySelectorAll(".body")[0];
-      if(bodyElem.style.display === "none"){
-        bodyElem.style.display = "block";
+    var newBody = this.querySelectorAll(".body")[0];
+    if(newBody.style.display === "block"){
+        newBody.style.display = "none";
       }else{
-        bodyElem.style.display = "none";
+        newBody.style.display = "block";
       }
     }
 
-  var count = 0;
-  for(var i = 0; i<window.geemails.length; i++){
-    count += windows.geemails.length;
-    return count;
-  }
+    
+    //console.log(getNewMessage());
+    
+    function newMessage(){
+      
+      
+      var msg = getNewMessage();
+      console.log(msg);
+      
+      var inboxCount = document.createElement("div");
+      inboxCount.className = "inbox";
+      inboxCount.innerHTML = "INBOX COUNT: " + count;
+      main.appendChild(inboxCount);
 
+      var newDate = document.createElement("div");
+      newDate.className = "nDate";
+      newDate.innerHTML = msg.date;
+      main.appendChild(newDate);
 
+      var newSubject = document.createElement("div");
+      newSubject.className = "nSubject";
+      newSubject.innerHTML = msg.subject;
+      main.appendChild(newSubject);
 
+      var newSender = document.createElement("div");
+      newSender.className = "nSender";
+      newSender.innerHTML = msg.sender;
+      main.appendChild(newSender);
 
-
-
-
-
-
-
-
-
-
-
+      var newBodyz = document.createElement("div");
+      newBodyz.className = "nBody";
+      newBodyz.innerHTML = msg.body;
+      newSender.appendChild(newBodyz);
+      
+      count++;
+      
+      
 
 
     
+    var nToggleElem = document.getElementsByClassName("nSender");
+    for(var p = 0; p<nToggleElem.length; p++){
+    nToggleElem[p].addEventListener("click", toggleNew);
+    }
+
+    function toggleNew(){
+      var nuBody = this.querySelectorAll(".nBody")[0];
+      if(nuBody.style.display === "block"){
+        nuBody.style.display = "none";
+        }else{
+        nuBody.style.display = "block";
+
+        }
+      }
+    }
+    
+  setInterval(newMessage, 1000);
 
 
-  }
-};
+  };
     </script>
 	</head>
 	<body>

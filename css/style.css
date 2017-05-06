@@ -1,3 +1,27 @@
+#titleLine{
+  font-size: 75px;
+  text-align: center;
+
+}
+
+.inbox{
+  border-top-style:solid;
+  border-color: blue;
+
+}
+
 .body{
-  display: none;
+  display: block;
+}
+
+.nBody{
+  display: block;
+
+}
+
+
+
+a.hover{
+  color:green;
+
 }
