@@ -1,27 +1,81 @@
+#main{
+  background: -webkit-linear-gradient(white,red,yellow,blue,green);
+}
+
 #titleLine{
   font-size: 75px;
   text-align: center;
-
+  background: -webkit-linear-gradient(left, #ff4d4d, #ffff33, #4da6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
 }
 
 .inbox{
   border-top-style:solid;
-  border-color: blue;
+  border-top-width: 3px;
+  border-color:black;
+  margin-top: 25px;
+  padding-top:40px;
+  padding: 7px;
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width: 1px;
+ 
+}
 
+.subject{
+  padding:7px;
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width: 1px;
+}
+
+.nSubject{
+  padding:7px;
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width: 1px;
+}
+
+.date{
+  padding:7px;
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width: 1px;
+}
+
+.nDate{
+  padding:7px;
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width: 1px;
+}
+
+.sender{
+  padding:7px;
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width: 1px;
+}
+
+.nSender{
+  padding:7px;
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width: 1px;
 }
 
 .body{
-  display: block;
+  padding: 25px;
+  display: block
+  
 }
 
 .nBody{
+  padding: 25px;
   display: block;
 
 }
 
 
 
-a.hover{
-  color:green;
-
-}

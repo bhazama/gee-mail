@@ -78,22 +78,22 @@
 
       var newDate = document.createElement("div");
       newDate.className = "nDate";
-      newDate.innerHTML = msg.date;
+      newDate.innerHTML = "DATE: " + msg.date;
       main.appendChild(newDate);
 
       var newSubject = document.createElement("div");
       newSubject.className = "nSubject";
-      newSubject.innerHTML = msg.subject;
+      newSubject.innerHTML = "SUBJECT: " + msg.subject;
       main.appendChild(newSubject);
 
       var newSender = document.createElement("div");
       newSender.className = "nSender";
-      newSender.innerHTML = msg.sender;
+      newSender.innerHTML ="SENDER: " + msg.sender;
       main.appendChild(newSender);
 
       var newBodyz = document.createElement("div");
       newBodyz.className = "nBody";
-      newBodyz.innerHTML = msg.body;
+      newBodyz.innerHTML = "BODY: " + msg.body;
       newSender.appendChild(newBodyz);
       
       count++;
@@ -118,7 +118,7 @@
       }
     }
     
-  setInterval(newMessage, 1000);
+  setInterval(newMessage, 5000);
 
 
   };
