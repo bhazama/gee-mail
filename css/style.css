@@ -4,6 +4,7 @@
 
 #titleLine{
   font-size: 75px;
+  font-family: 'Love Ya Like A Sister', cursive;
   text-align: center;
   background: -webkit-linear-gradient(left, #ff4d4d, #ffff33, #4da6ff);
   -webkit-background-clip: text;
@@ -11,6 +12,8 @@
 }
 
 .inbox{
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   border-top-style:solid;
   border-top-width: 3px;
   border-color:black;
@@ -18,60 +21,76 @@
   padding-top:40px;
   padding: 7px;
   border-bottom-style:solid;
-  border-bottom-color:lightgray;
+  border-bottom-color:#e6e6e6;
   border-bottom-width: 1px;
  
 }
 
 .subject{
+  font-size:20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:lightgray;
+  border-bottom-color:#e6e6e6;
   border-bottom-width: 1px;
 }
 
 .nSubject{
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:lightgray;
+  border-bottom-color:#e6e6e6;
   border-bottom-width: 1px;
 }
 
 .date{
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:lightgray;
+  border-bottom-color:#e6e6e6;
   border-bottom-width: 1px;
 }
 
 .nDate{
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:lightgray;
+  border-bottom-color:#e6e6e6;
   border-bottom-width: 1px;
 }
 
 .sender{
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:lightgray;
+  border-bottom-color:#e6e6e6;
   border-bottom-width: 1px;
 }
 
 .nSender{
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:lightgray;
+  border-bottom-color:#e6e6e6;
   border-bottom-width: 1px;
 }
 
 .body{
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive;
   padding: 25px;
   display: block
   
 }
 
 .nBody{
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive;
   padding: 25px;
   display: block;
 
