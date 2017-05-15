@@ -1,5 +1,5 @@
 #main{
-  background: -webkit-linear-gradient(white,red,yellow,blue,green);
+  background: -webkit-linear-gradient(#e6e6e6, #ffb3b3, #ffffb3, #b3ffb3, #b3d9ff, #ffb3ff);
 }
 
 #titleLine{
@@ -20,8 +20,8 @@
   margin-top: 25px;
   padding-top:40px;
   padding: 7px;
-  border-bottom-style:solid;
-  border-bottom-color:#e6e6e6;
+  border-bottom-style: solid;
+  border-bottom-color: white;
   border-bottom-width: 1px;
  
 }
@@ -31,7 +31,7 @@
   font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:#e6e6e6;
+  border-bottom-color: white;
   border-bottom-width: 1px;
 }
 
@@ -40,7 +40,7 @@
   font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:#e6e6e6;
+  border-bottom-color: white;
   border-bottom-width: 1px;
 }
 
@@ -49,7 +49,7 @@
   font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:#e6e6e6;
+  border-bottom-color: white;
   border-bottom-width: 1px;
 }
 
@@ -58,7 +58,7 @@
   font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:#e6e6e6;
+  border-bottom-color: white;
   border-bottom-width: 1px;
 }
 
@@ -67,7 +67,7 @@
   font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:#e6e6e6;
+  border-bottom-color: white;
   border-bottom-width: 1px;
 }
 
@@ -76,7 +76,7 @@
   font-family: 'Love Ya Like A Sister', cursive;
   padding:7px;
   border-bottom-style:solid;
-  border-bottom-color:#e6e6e6;
+  border-bottom-color: white;
   border-bottom-width: 1px;
 }
 

@@ -41,7 +41,7 @@
 
     var bodyElem = document.createElement("div");
     bodyElem.className = "body";
-    bodyElem.innerHTML = "BODY: " + window.geemails[i].body;
+    bodyElem.innerHTML = window.geemails[i].body;
     senderElem.appendChild(bodyElem);
 
   }
@@ -67,7 +67,7 @@
     //console.log(getNewMessage());
     
     function newMessage(){
-      
+      count++;
       
       var msg = getNewMessage();
       console.log(msg);
@@ -94,10 +94,10 @@
 
       var newBodyz = document.createElement("div");
       newBodyz.className = "nBody";
-      newBodyz.innerHTML = "BODY: " + msg.body;
+      newBodyz.innerHTML = msg.body;
       newSender.appendChild(newBodyz);
       
-      count++;
+      
       
       
 
@@ -119,8 +119,8 @@
       }
     }
     
-  setInterval(newMessage, 5000);
-
+  
+    setInterval(newMessage, 5000);
 
   };
     </script>
